@@ -4,6 +4,7 @@
 
 效果：
 
+![效果](https://github.com/FengYangLiu/front-end-daily-challenges/blob/master/images/001-button-text-staggered-sliding-effects.gif)
 
 学习思路
 1. 创建按钮,为按钮添加效果

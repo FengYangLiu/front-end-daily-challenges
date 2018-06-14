@@ -4,7 +4,7 @@
 
 效果：
 
-![好晕](https://github.com/FengYangLiu/front-end-daily-challenges/blob/master/images/002-rectangular-rotating-loader-animation)
+![好晕](https://github.com/FengYangLiu/front-end-daily-challenges/blob/master/images/002-rectangular-rotating-loader-animation.gif)
 
 实现思路：
 

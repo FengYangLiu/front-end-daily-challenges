@@ -1,0 +1,70 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*  flex居中 */
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 添加渐变背景 */
+.box {
+	width: 200px;
+	/* height: 40px; */
+	/* line-height: 40px; */
+	/* font-size: 20px; */
+	--width: 250px;
+	--height: calc(var(--width) / 3);
+	width: var(--width);
+	height: var(--height);
+	line-height: var(--height);
+	font-size: calc(var(--height) / 2.5);
+	border: 1px solid #3A3f23;
+	background: linear-gradient(to right,#3A3f23, #8b8f9b);
+	text-align: center;
+	color: #fff;
+	letter-spacing: 0.2em;
+	border-radius: 2em;
+	transform: perspective(500px) rotateY(-15deg);
+	text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+}
+
+/* hover状态 */
+.box:hover{
+	transform: perspective(500px) rotateY(-15deg);
+	text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 添加金属光泽 */
+.box::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	/* height: 40px; */
+	height: var(--height);
+	background: linear-gradient(to right, transparent, white, transparent);
+	left: 0;
+}
+.box::before {
+	left: -100%;
+	transition: 0.5s;
+}
+
+.box:hover::before {
+	left: 100%;
+}
+
+

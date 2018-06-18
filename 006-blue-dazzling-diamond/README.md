@@ -3,7 +3,7 @@
 > 原作：https://segmentfault.com/a/1190000014652116
 
 效果:
-![真的太有趣了]()
+![真的太有趣了](https://github.com/FengYangLiu/front-end-daily-challenges/blob/master/images/006-blue-dazzling-diamond.gif)
 
 
 实现思路：

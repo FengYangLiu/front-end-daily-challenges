@@ -4,7 +4,7 @@
 
 效果:
 
-![炫酷](https://github.com/FengYangLiu/front-end-daily-challenges/blob/master/images/008-charging-loader-animation.gif)
+![充电~](https://github.com/FengYangLiu/front-end-daily-challenges/blob/master/images/008-charging-loader-animation.gif)
 
 
 实现思路：
@@ -12,6 +12,12 @@
 1. 创建一个电池容器
 2. 创建电量适应background-image
 3. 通过`keyframes` 来修改 `background-size`
+
+学习到的
+1. 稍微了解了steps属性,帧数 每个里面有几帧;
+
+参考：
+1. [steps](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Timing_functions)
 
 
 

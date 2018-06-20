@@ -15,6 +15,10 @@
 
 学习到的
 1. 稍微了解了steps属性,帧数 每个里面有几帧;
+2. `currentColor` 这个属性是继承使用
+
+遇到的问题：
+1. steps不能和linear一起使用
 
 参考：
 1. [steps](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Timing_functions)

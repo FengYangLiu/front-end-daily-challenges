@@ -1,0 +1,57 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*  flex居中 */
+
+html,
+body
+ {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(brown, sandybrown);
+}
+
+.text {
+	font-size: 5em;
+	font-family: "arial black";
+	position: relative;
+	transition: 0.2s;
+	color: transparent;
+}
+
+.text::before,
+.text::after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: lightyellow;
+	
+}
+
+.text::before{
+	background-color: darkcyan;
+	clip-path: polygon(0 0, 60% 0, 30% 100%, 0 100%);
+}
+.text::after {
+	background-color: darkgreen;
+	clip-path: polygon(60% 0, 100% 0, 100% 100%, 30% 100%);
+}
+
+.text:hover::before {
+	left: -0.15em;
+	transform: rotate(-5deg);
+	top: -0.05em;
+}
+
+.text:hover::after {
+	left: 0.15em;
+	transform: rotate(5deg);
+	top: 0.05em;
+}

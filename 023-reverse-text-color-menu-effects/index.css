@@ -1,0 +1,61 @@
+* {
+	padding: 0;
+	margin: 0;
+	/* box-sizing: border-box; */
+}
+
+/*  flex居中 */
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	 background: linear-gradient(to right bottom, gold, chocolate);
+}
+
+nav ul li{
+font-size: 40px;
+font-family: sans-serif;
+background-color: white;
+border: 2px solid black;
+letter-spacing: 0.1em;
+width: var(--x);
+height: var(--y);
+line-height: var(--y);
+position: relative;
+overflow: hidden;
+}
+
+:root {
+	--x: 5em;
+	--y: 1.5em;
+}
+
+nav ul li::before{
+	content: '';
+	position: absolute;
+	height: var(--y);
+	width: var(--y);
+	background-color: black;
+	border-radius: 50%;
+	top: 0;
+	left: calc(-1 * var(--y) / 2);
+}
+nav ul li span{
+	color: white;
+	mix-blend-mode: difference;
+}
+nav ul li::before{
+	transition: 0.5s ease-out;
+}
+
+nav ul li:hover::before{
+	    --r: calc(var(--x) * 1.2);
+	    height: var(--r);
+	    width: var(--r);
+	    top: calc(-1 * var(--r) / 2 + var(--y) / 2);
+	    left: calc(-1 * var(--r) / 2 + var(--x) / 2);
+}

@@ -1,0 +1,6 @@
+/node_modules
+.vscode/settings.json
+webpack.config.js
+src/index.js
+package.json
+dist/bundle.js
